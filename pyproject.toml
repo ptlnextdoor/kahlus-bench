@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kahlus-bench"
+version = "0.1.0"
+description = "A leakage-sealed benchmark for neural-coupling and directed-information claims"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+figures = ["matplotlib>=3.6"]
+dev = ["pytest>=7", "matplotlib>=3.6"]
+
+[project.urls]
+Homepage = "https://github.com/ptlnextdoor/kahlus-bench"
+
+[tool.setuptools]
+packages = ["kahlus_bench", "kahlus_bench.methods", "kahlus_bench.scoring", "kahlus_bench.synthetic"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

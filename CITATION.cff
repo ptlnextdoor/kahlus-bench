@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use kahlus-bench, please cite it."
+title: "kahlus-bench: a leakage-sealed benchmark for neural-coupling and directed-information claims"
+authors:
+  - family-names: Patel
+    given-names: Aayushya
+    alias: ptlnextdoor
+version: 0.1.0
+date-released: 2026-07-20
+url: "https://github.com/ptlnextdoor/kahlus-bench"
+license: MIT
